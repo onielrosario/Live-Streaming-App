@@ -12,6 +12,9 @@
 		091EDC30230DDCC900DAE930 /* CustomPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091EDC2F230DDCC900DAE930 /* CustomPlayer.xib */; };
 		091EDC32230DE36F00DAE930 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC31230DE36F00DAE930 /* PlayerModel.swift */; };
 		091EDC34230DE39600DAE930 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC33230DE39600DAE930 /* PlayerView.swift */; };
+		091EDC36230DE71B00DAE930 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC35230DE71B00DAE930 /* DetailViewController.swift */; };
+		091EDC38230DF6F100DAE930 /* SteamingLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC37230DF6F100DAE930 /* SteamingLinks.swift */; };
+		091EDC3C230DFD2200DAE930 /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC3B230DFD2200DAE930 /* AppUtilities.swift */; };
 		09D83B42230C7D47006222B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D83B41230C7D47006222B8 /* AppDelegate.swift */; };
 		09D83B44230C7D47006222B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D83B43230C7D47006222B8 /* ViewController.swift */; };
 		09D83B47230C7D47006222B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D83B45230C7D47006222B8 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 		091EDC2F230DDCC900DAE930 /* CustomPlayer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPlayer.xib; sourceTree = "<group>"; };
 		091EDC31230DE36F00DAE930 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerModel.swift; path = ../Views/PlayerModel.swift; sourceTree = "<group>"; };
 		091EDC33230DE39600DAE930 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		091EDC35230DE71B00DAE930 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		091EDC37230DF6F100DAE930 /* SteamingLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamingLinks.swift; sourceTree = "<group>"; };
+		091EDC3B230DFD2200DAE930 /* AppUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
 		09D83B3E230C7D47006222B8 /* RealEyes_CodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEyes_CodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D83B41230C7D47006222B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D83B43230C7D47006222B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 			children = (
 				091EDC2D230DC0CA00DAE930 /* SourceModel.swift */,
 				091EDC31230DE36F00DAE930 /* PlayerModel.swift */,
+				091EDC37230DF6F100DAE930 /* SteamingLinks.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 				09D83B41230C7D47006222B8 /* AppDelegate.swift */,
 				09D83B48230C7D49006222B8 /* Assets.xcassets */,
 				09D83B4A230C7D49006222B8 /* LaunchScreen.storyboard */,
+				091EDC3B230DFD2200DAE930 /* AppUtilities.swift */,
 			);
 			name = "Supporting files";
 			path = "../Supporting files";
@@ -156,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				09D83B43230C7D47006222B8 /* ViewController.swift */,
+				091EDC35230DE71B00DAE930 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -263,11 +272,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				091EDC32230DE36F00DAE930 /* PlayerModel.swift in Sources */,
+				091EDC3C230DFD2200DAE930 /* AppUtilities.swift in Sources */,
 				09D83B44230C7D47006222B8 /* ViewController.swift in Sources */,
 				091EDC2C230DBFE800DAE930 /* ViewModel.swift in Sources */,
 				091EDC34230DE39600DAE930 /* PlayerView.swift in Sources */,
 				091EDC2E230DC0CA00DAE930 /* SourceModel.swift in Sources */,
 				09D83B42230C7D47006222B8 /* AppDelegate.swift in Sources */,
+				091EDC36230DE71B00DAE930 /* DetailViewController.swift in Sources */,
+				091EDC38230DF6F100DAE930 /* SteamingLinks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

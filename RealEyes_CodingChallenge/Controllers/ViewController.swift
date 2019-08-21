@@ -8,10 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ListViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+      setupUI()
+    }
+    
+    @IBAction func goToPlayer(_ sender: UIButton) {
+   let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let player = storyBoard.instantiateViewController(withIdentifier: "DetailVC")
+        present(player, animated: true, completion: nil)
+    }
+    
+    
+    private func setupUI() {
+        AppUtility.lockOrientation(orientation: .portrait)
+    }
+    
 }
-
-

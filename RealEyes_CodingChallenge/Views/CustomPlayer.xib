@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayerView" customModule="RealEyes_CodingChallenge" customModuleProvider="target">
             <connections>
-                <outlet property="container" destination="iN0-l3-epB" id="cDz-LJ-uxq"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="cDz-LJ-uxq"/>
                 <outlet property="fastForwardButton" destination="TD1-Fr-2lS" id="qhZ-2G-1ax"/>
                 <outlet property="playButton" destination="N6m-i7-vnz" id="EDZ-QI-hIY"/>
                 <outlet property="rewindButton" destination="fhc-2q-ciO" id="K3c-ES-nOM"/>
@@ -29,22 +29,23 @@
                     <color key="tintColor" red="1" green="0.36989200589999999" blue="0.32260076659999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </slider>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6m-i7-vnz">
-                    <rect key="frame" x="373" y="132" width="150" height="150"/>
+                    <rect key="frame" x="398" y="157" width="100" height="100"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="150" id="OsH-aT-DMF"/>
-                        <constraint firstAttribute="width" constant="150" id="iRa-QI-Uzs"/>
+                        <constraint firstAttribute="height" constant="100" id="OsH-aT-DMF"/>
+                        <constraint firstAttribute="width" constant="100" id="iRa-QI-Uzs"/>
                     </constraints>
                     <state key="normal" image="play48"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TD1-Fr-2lS">
-                    <rect key="frame" x="673" y="169.5" width="75" height="75"/>
+                    <rect key="frame" x="648" y="182" width="50" height="50"/>
                     <state key="normal" image="fastforward"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhc-2q-ciO">
-                    <rect key="frame" x="148" y="169.5" width="75" height="75"/>
+                    <rect key="frame" x="198" y="182" width="50" height="50"/>
                     <state key="normal" image="rewind"/>
                 </button>
             </subviews>
+            <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="N6m-i7-vnz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6z2-mg-QLB"/>
                 <constraint firstItem="TD1-Fr-2lS" firstAttribute="height" secondItem="N6m-i7-vnz" secondAttribute="height" multiplier="0.5" id="B9u-1Q-6FN"/>

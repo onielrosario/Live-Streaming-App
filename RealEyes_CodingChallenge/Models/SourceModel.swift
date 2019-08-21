@@ -11,10 +11,9 @@ import Foundation
 
 class Source: SourceModeling {
     var sources: [String]
-    let mockData = ["https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"]
     
-    init(sources: [String]) {
-        self.sources = mockData
+    init(sources: [String] = StreamingLinks.data) {
+        self.sources = sources
     }
 }
 

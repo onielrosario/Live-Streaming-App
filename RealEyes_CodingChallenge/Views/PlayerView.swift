@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class PlayerView: UIView {
-    @IBOutlet var container: UIView!
+    @IBOutlet var contentView: UIView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var rewindButton: UIButton!
     @IBOutlet weak var fastForwardButton: UIButton!
@@ -28,7 +28,7 @@ class PlayerView: UIView {
     
     func  commonInit() {
         Bundle.main.loadNibNamed("CustomPlayer", owner: self, options: nil)
-        addSubview(container)
+        addSubview(contentView)
     }
     
 }
