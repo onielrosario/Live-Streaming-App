@@ -9,6 +9,10 @@
 import Foundation
 
 
-class Source {
-    let sources = ["https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"]
+class Source: SourceModeling {
+    var sources: [String]
+    
+    let mockData = ["https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"]
 }
+
+

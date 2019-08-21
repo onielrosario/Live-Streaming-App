@@ -8,16 +8,7 @@
 
 import Foundation
 
-protocol SourceViewModeling {
+protocol SourceModeling {
     var sources: [String] { get }
 }
 
-
-
-class SourceViewModel: SourceViewModeling {
-    var sources: [String]
-    
-    init(source: Source = Source() ) {
-        self.sources = source.sources
-    }
-}
