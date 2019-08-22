@@ -9,6 +9,6 @@
 import Foundation
 
 
-struct StreamingLinks {
+struct VideoClip {
     let data: [URL: String]
 }
