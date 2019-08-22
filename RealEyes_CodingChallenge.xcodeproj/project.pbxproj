@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		091EDC2C230DBFE800DAE930 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC2B230DBFE800DAE930 /* ViewModel.swift */; };
 		091EDC2E230DC0CA00DAE930 /* SourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC2D230DC0CA00DAE930 /* SourceModel.swift */; };
 		091EDC30230DDCC900DAE930 /* CustomPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091EDC2F230DDCC900DAE930 /* CustomPlayer.xib */; };
 		091EDC32230DE36F00DAE930 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC31230DE36F00DAE930 /* PlayerModel.swift */; };
@@ -34,7 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		091EDC2B230DBFE800DAE930 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		091EDC2D230DC0CA00DAE930 /* SourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModel.swift; sourceTree = "<group>"; };
 		091EDC2F230DDCC900DAE930 /* CustomPlayer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPlayer.xib; sourceTree = "<group>"; };
 		091EDC31230DE36F00DAE930 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerModel.swift; path = ../Views/PlayerModel.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 		09B372D0230CFF500011F580 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				091EDC2B230DBFE800DAE930 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -274,7 +271,6 @@
 				091EDC32230DE36F00DAE930 /* PlayerModel.swift in Sources */,
 				091EDC3C230DFD2200DAE930 /* AppUtilities.swift in Sources */,
 				09D83B44230C7D47006222B8 /* ViewController.swift in Sources */,
-				091EDC2C230DBFE800DAE930 /* ViewModel.swift in Sources */,
 				091EDC34230DE39600DAE930 /* PlayerView.swift in Sources */,
 				091EDC2E230DC0CA00DAE930 /* SourceModel.swift in Sources */,
 				09D83B42230C7D47006222B8 /* AppDelegate.swift in Sources */,

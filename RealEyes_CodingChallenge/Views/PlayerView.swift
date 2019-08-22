@@ -15,6 +15,7 @@ class PlayerView: UIView {
     @IBOutlet weak var rewindButton: UIButton!
     @IBOutlet weak var fastForwardButton: UIButton!
     @IBOutlet weak var streamBar: UISlider!
+    @IBOutlet weak var cancelButton: UIButton!
     
     override init(frame: CGRect) {
         super.init(frame: UIScreen.main.bounds)

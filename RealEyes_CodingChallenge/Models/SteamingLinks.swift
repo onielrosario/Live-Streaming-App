@@ -10,5 +10,5 @@ import Foundation
 
 
 struct StreamingLinks {
-    static let data = [""]
+    let data: [URL: String]
 }
