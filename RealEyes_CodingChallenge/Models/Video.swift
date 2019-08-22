@@ -9,6 +9,13 @@
 import Foundation
 
 
-struct VideoClip {
-    let data: [URL: String]
+class VideoClip {
+    let link: URL
+    let thumbNail: URL
+    let name: String
+    init(link: URL, thumbnail: URL, name: String) {
+        self.link = link
+        self.thumbNail = thumbnail
+        self.name = name
+    }
 }

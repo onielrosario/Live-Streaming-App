@@ -14,8 +14,11 @@
 		091EDC36230DE71B00DAE930 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC35230DE71B00DAE930 /* DetailViewController.swift */; };
 		091EDC38230DF6F100DAE930 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC37230DF6F100DAE930 /* Video.swift */; };
 		091EDC3C230DFD2200DAE930 /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC3B230DFD2200DAE930 /* AppUtilities.swift */; };
+		09CF219F230F21CF00EB2661 /* MainListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CF219E230F21CF00EB2661 /* MainListCollectionViewCell.swift */; };
+		09CF21A2230F2C5900EB2661 /* videoStillFrame1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09CF21A1230F2C5800EB2661 /* videoStillFrame1.png */; };
+		09CF21A4230F398500EB2661 /* videoStillFrame2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09CF21A3230F398500EB2661 /* videoStillFrame2.png */; };
 		09D83B42230C7D47006222B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D83B41230C7D47006222B8 /* AppDelegate.swift */; };
-		09D83B44230C7D47006222B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D83B43230C7D47006222B8 /* ViewController.swift */; };
+		09D83B44230C7D47006222B8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D83B43230C7D47006222B8 /* ListViewController.swift */; };
 		09D83B47230C7D47006222B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D83B45230C7D47006222B8 /* Main.storyboard */; };
 		09D83B49230C7D49006222B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D83B48230C7D49006222B8 /* Assets.xcassets */; };
 		09D83B4C230C7D49006222B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D83B4A230C7D49006222B8 /* LaunchScreen.storyboard */; };
@@ -40,9 +43,12 @@
 		091EDC35230DE71B00DAE930 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		091EDC37230DF6F100DAE930 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		091EDC3B230DFD2200DAE930 /* AppUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
+		09CF219E230F21CF00EB2661 /* MainListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListCollectionViewCell.swift; sourceTree = "<group>"; };
+		09CF21A1230F2C5800EB2661 /* videoStillFrame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoStillFrame1.png; sourceTree = "<group>"; };
+		09CF21A3230F398500EB2661 /* videoStillFrame2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoStillFrame2.png; sourceTree = "<group>"; };
 		09D83B3E230C7D47006222B8 /* RealEyes_CodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealEyes_CodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D83B41230C7D47006222B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09D83B43230C7D47006222B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09D83B43230C7D47006222B8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		09D83B46230C7D47006222B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09D83B48230C7D49006222B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D83B4B230C7D49006222B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,6 +110,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		09CF219D230F21B100EB2661 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				09CF219E230F21CF00EB2661 /* MainListCollectionViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		09CF21A0230F2C3500EB2661 /* Thumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				09CF21A3230F398500EB2661 /* videoStillFrame2.png */,
+				09CF21A1230F2C5800EB2661 /* videoStillFrame1.png */,
+			);
+			path = Thumbnails;
+			sourceTree = "<group>";
+		};
 		09D83B35230C7D47006222B8 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +148,8 @@
 		09D83B40230C7D47006222B8 /* RealEyes_CodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				09CF21A0230F2C3500EB2661 /* Thumbnails */,
+				09CF219D230F21B100EB2661 /* Custom Cells */,
 				09B372D0230CFF500011F580 /* ViewModel */,
 				09B372CF230CFF3C0011F580 /* Models */,
 				09B372CE230CFF340011F580 /* Views */,
@@ -160,7 +185,7 @@
 		09D83B63230CFEAD006222B8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				09D83B43230C7D47006222B8 /* ViewController.swift */,
+				09D83B43230C7D47006222B8 /* ListViewController.swift */,
 				091EDC35230DE71B00DAE930 /* DetailViewController.swift */,
 			);
 			path = Controllers;
@@ -248,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D83B4C230C7D49006222B8 /* LaunchScreen.storyboard in Resources */,
+				09CF21A2230F2C5900EB2661 /* videoStillFrame1.png in Resources */,
 				091EDC30230DDCC900DAE930 /* CustomPlayer.xib in Resources */,
+				09CF21A4230F398500EB2661 /* videoStillFrame2.png in Resources */,
 				09D83B49230C7D49006222B8 /* Assets.xcassets in Resources */,
 				09D83B47230C7D47006222B8 /* Main.storyboard in Resources */,
 			);
@@ -270,7 +297,8 @@
 			files = (
 				091EDC32230DE36F00DAE930 /* PlayerModel.swift in Sources */,
 				091EDC3C230DFD2200DAE930 /* AppUtilities.swift in Sources */,
-				09D83B44230C7D47006222B8 /* ViewController.swift in Sources */,
+				09CF219F230F21CF00EB2661 /* MainListCollectionViewCell.swift in Sources */,
+				09D83B44230C7D47006222B8 /* ListViewController.swift in Sources */,
 				091EDC34230DE39600DAE930 /* PlayerView.swift in Sources */,
 				091EDC2E230DC0CA00DAE930 /* SourceModel.swift in Sources */,
 				09D83B42230C7D47006222B8 /* AppDelegate.swift in Sources */,
