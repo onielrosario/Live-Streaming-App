@@ -12,12 +12,16 @@ class MainListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var videoImageButton: UIButton!
     @IBOutlet weak var videoTitle: UILabel!
     @IBOutlet weak var videoDuration: UILabel!
-    
-    var video: VideoClip! {
+    var cellVideo: VideoClip! {
         didSet {
-            videoImageButton.setImage(UIImage(named: self.video.thumbNail.path), for: .normal)
-            videoTitle.text = self.video.name
+            videoImageButton.setImage(UIImage(named: self.cellVideo.thumbNail.path), for: .normal)
+            videoTitle.text = self.cellVideo.name
         }
     }
- 
+    
+    func configureCell(video: VideoClip, action: Selector, tag: Int, owner: ListViewController) {
+        cellVideo = video
+        videoImageButton.tag = tag
+        videoImageButton.addTarget(owner, action: action, for: .touchUpInside)
+    }
 }

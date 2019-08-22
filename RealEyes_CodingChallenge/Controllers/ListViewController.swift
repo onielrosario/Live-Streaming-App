@@ -41,10 +41,15 @@ extension ListViewController: UICollectionViewDataSource, UICollectionViewDelega
             fatalError("error dequeuing cell")
         }
         let video = source.sources[indexPath.row]
-        cell.video = video
+        cell.configureCell(video: video, action: #selector(displayVideo), tag: indexPath.row, owner: self)
         return cell
     }
     
-  
+    @objc private func displayVideo(button: UIButton) {
+        presentPlayer(video: source.sources[button.tag])
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width - 30, height: 200)
+    }
 }

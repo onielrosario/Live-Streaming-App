@@ -10,6 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     let avPlayer = PlayerView()
+    var video: VideoClip!
 
     override func viewDidLoad() {
         super.viewDidLoad()
