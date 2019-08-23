@@ -9,17 +9,20 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    let avPlayer = PlayerView()
+    lazy var avPlayer = PlayerView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
     let indicatorView = LoadingScreen()
     var video: VideoClip!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    setupUI()
+         setupUI()
     }
     
     private func setupUI() {
-          view.addSubview(avPlayer)
+    avPlayer.video = video
+    avPlayer.cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
+//    avPlayer.contentMode = .scaleAspectFit
+    view.addSubview(avPlayer)
     }
     
     override var shouldAutorotate: Bool {
@@ -34,8 +37,8 @@ class DetailViewController: UIViewController {
         return .landscapeRight
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+    @objc private func cancel() {
+     dismiss(animated: true)
     }
 
 }
