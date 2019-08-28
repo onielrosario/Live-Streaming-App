@@ -9,20 +9,23 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    lazy var avPlayer = PlayerView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
+    private var viewModel: DetailVCViewModeling = DetailVCViewModel()
     let indicatorView = LoadingScreen()
-    var video: VideoClip!
-
+    var videoSource: VideoClip!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-         setupUI()
+        setupUI()
+        setupConstraints()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        AppUtility.lockOrientationWithRotation(.landscape, andRotateTo: .landscapeRight)
     }
     
     private func setupUI() {
-    avPlayer.video = video
-    avPlayer.cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
-//    avPlayer.contentMode = .scaleAspectFit
-    view.addSubview(avPlayer)
+        viewModel.avPlayer.setupVideoContent(video: videoSource.link)
+        viewModel.cancel(self, action: #selector(cancel))
     }
     
     override var shouldAutorotate: Bool {
@@ -38,7 +41,18 @@ class DetailViewController: UIViewController {
     }
     
     @objc private func cancel() {
-     dismiss(animated: true)
+        dismiss(animated: true)
     }
-
+    
+    private func setupConstraints() {
+        viewModel.avPlayer.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(viewModel.avPlayer)
+        NSLayoutConstraint.activate([
+            viewModel.avPlayer.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            viewModel.avPlayer.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            viewModel.avPlayer.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            viewModel.avPlayer.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            ])
+    }
+    
 }

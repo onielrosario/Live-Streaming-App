@@ -15,9 +15,11 @@
                 <outlet property="cancelButton" destination="E03-E0-ozD" id="JxN-Fc-Qha"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="cDz-LJ-uxq"/>
                 <outlet property="fastForwardButton" destination="TD1-Fr-2lS" id="qhZ-2G-1ax"/>
+                <outlet property="initialTimeframe" destination="Vid-jl-Ged" id="O6A-hL-8sy"/>
                 <outlet property="playButton" destination="N6m-i7-vnz" id="EDZ-QI-hIY"/>
                 <outlet property="rewindButton" destination="fhc-2q-ciO" id="K3c-ES-nOM"/>
                 <outlet property="streamBar" destination="Hb8-Im-CQJ" id="IRO-c8-oaQ"/>
+                <outlet property="totalTimeframe" destination="VGf-zD-ckM" id="1Dv-zZ-3dL"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -25,10 +27,6 @@
             <rect key="frame" x="0.0" y="0.0" width="802" height="414"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hb8-Im-CQJ">
-                    <rect key="frame" x="158.5" y="313" width="485" height="31"/>
-                    <color key="tintColor" red="1" green="0.36989200589999999" blue="0.32260076659999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                </slider>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6m-i7-vnz">
                     <rect key="frame" x="351" y="157" width="100" height="100"/>
                     <constraints>
@@ -53,24 +51,44 @@
                     </constraints>
                     <state key="normal" image="cancel"/>
                 </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-0.5" minValue="-0.5" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hb8-Im-CQJ">
+                    <rect key="frame" x="158.5" y="313" width="485" height="31"/>
+                    <color key="tintColor" red="1" green="0.36989200589999999" blue="0.32260076659999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vid-jl-Ged">
+                    <rect key="frame" x="114.5" y="317.5" width="36" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGf-zD-ckM">
+                    <rect key="frame" x="651.5" y="317.5" width="36" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="N6m-i7-vnz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6z2-mg-QLB"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="E03-E0-ozD" secondAttribute="trailing" constant="20" id="9js-9n-nmO"/>
                 <constraint firstItem="TD1-Fr-2lS" firstAttribute="height" secondItem="N6m-i7-vnz" secondAttribute="height" multiplier="0.5" id="B9u-1Q-6FN"/>
+                <constraint firstItem="VGf-zD-ckM" firstAttribute="centerY" secondItem="Hb8-Im-CQJ" secondAttribute="centerY" id="BLK-VT-Kq1"/>
                 <constraint firstItem="fhc-2q-ciO" firstAttribute="height" secondItem="N6m-i7-vnz" secondAttribute="height" multiplier="0.5" id="Bgr-Qw-oyg"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Hb8-Im-CQJ" secondAttribute="bottom" constant="50" id="Ecs-eP-OjZ"/>
                 <constraint firstItem="E03-E0-ozD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="GAl-xA-ovH"/>
                 <constraint firstItem="Hb8-Im-CQJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="LMY-9V-Nao"/>
                 <constraint firstItem="Hb8-Im-CQJ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="QjT-BS-jkl"/>
+                <constraint firstItem="VGf-zD-ckM" firstAttribute="leading" secondItem="Hb8-Im-CQJ" secondAttribute="trailing" constant="10" id="VNn-bP-0sn"/>
                 <constraint firstItem="fhc-2q-ciO" firstAttribute="centerY" secondItem="N6m-i7-vnz" secondAttribute="centerY" id="Y9C-41-Edc"/>
                 <constraint firstItem="TD1-Fr-2lS" firstAttribute="leading" secondItem="N6m-i7-vnz" secondAttribute="trailing" constant="150" id="Zit-ke-gXi"/>
                 <constraint firstItem="N6m-i7-vnz" firstAttribute="leading" secondItem="fhc-2q-ciO" secondAttribute="trailing" constant="150" id="c53-UF-QFu"/>
                 <constraint firstItem="TD1-Fr-2lS" firstAttribute="centerY" secondItem="N6m-i7-vnz" secondAttribute="centerY" id="d5X-Ua-ATK"/>
                 <constraint firstItem="N6m-i7-vnz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="daP-H1-gjy"/>
+                <constraint firstItem="Hb8-Im-CQJ" firstAttribute="leading" secondItem="Vid-jl-Ged" secondAttribute="trailing" constant="10" id="e0h-iF-13c"/>
                 <constraint firstItem="fhc-2q-ciO" firstAttribute="width" secondItem="N6m-i7-vnz" secondAttribute="width" multiplier="0.5" id="gdU-c8-OPM"/>
                 <constraint firstItem="TD1-Fr-2lS" firstAttribute="width" secondItem="N6m-i7-vnz" secondAttribute="width" multiplier="0.5" id="hbJ-Kf-Hsd"/>
+                <constraint firstItem="Vid-jl-Ged" firstAttribute="centerY" secondItem="Hb8-Im-CQJ" secondAttribute="centerY" id="lMt-Fb-3c7"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

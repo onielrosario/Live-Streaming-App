@@ -35,10 +35,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="215"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCQ-xb-JPx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="215"/>
-                                                    <state key="normal" image="videoPlaceholder"/>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geY-GY-9tk">
                                                     <rect key="frame" x="20" y="174" width="246" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -51,24 +47,27 @@
                                                     <color key="textColor" red="1" green="0.85618325390000005" blue="0.51237655900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LN3-6Q-ltd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="215"/>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="geY-GY-9tk" firstAttribute="leading" secondItem="xFp-Sh-hgY" secondAttribute="leadingMargin" constant="12" id="3c1-Ok-UAT"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="ups-09-mJl" secondAttribute="trailing" constant="100" id="CGZ-We-JjW"/>
-                                            <constraint firstItem="dCQ-xb-JPx" firstAttribute="top" secondItem="xFp-Sh-hgY" secondAttribute="top" id="Fxw-SH-w0m"/>
+                                            <constraint firstItem="LN3-6Q-ltd" firstAttribute="top" secondItem="xFp-Sh-hgY" secondAttribute="top" id="Lec-Yg-rLj"/>
                                             <constraint firstItem="geY-GY-9tk" firstAttribute="top" secondItem="ups-09-mJl" secondAttribute="bottom" constant="10" id="S8E-35-ss0"/>
-                                            <constraint firstAttribute="trailing" secondItem="dCQ-xb-JPx" secondAttribute="trailing" id="TPS-rX-j8K"/>
-                                            <constraint firstAttribute="bottom" secondItem="dCQ-xb-JPx" secondAttribute="bottom" id="jt9-Ht-Nb5"/>
+                                            <constraint firstAttribute="trailing" secondItem="LN3-6Q-ltd" secondAttribute="trailing" id="ew5-JJ-7ua"/>
                                             <constraint firstItem="ups-09-mJl" firstAttribute="leading" secondItem="xFp-Sh-hgY" secondAttribute="leadingMargin" constant="12" id="lgE-iT-PW9"/>
-                                            <constraint firstItem="dCQ-xb-JPx" firstAttribute="leading" secondItem="xFp-Sh-hgY" secondAttribute="leading" id="pfL-Ya-0ra"/>
+                                            <constraint firstAttribute="bottom" secondItem="LN3-6Q-ltd" secondAttribute="bottom" id="mn8-bF-GZb"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="geY-GY-9tk" secondAttribute="bottom" constant="12" id="rfH-hi-Hc2"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="geY-GY-9tk" secondAttribute="trailing" constant="100" id="wgb-vK-0Mi"/>
+                                            <constraint firstItem="LN3-6Q-ltd" firstAttribute="leading" secondItem="xFp-Sh-hgY" secondAttribute="leading" id="zc0-Yq-XR1"/>
                                         </constraints>
                                         <size key="customSize" width="374" height="215"/>
                                         <connections>
                                             <outlet property="videoDuration" destination="ups-09-mJl" id="Do6-mV-GZ3"/>
-                                            <outlet property="videoImageButton" destination="dCQ-xb-JPx" id="5gL-ln-8wC"/>
+                                            <outlet property="videoImage" destination="LN3-6Q-ltd" id="7sK-Ex-VZq"/>
                                             <outlet property="videoTitle" destination="geY-GY-9tk" id="kig-z9-cCA"/>
                                         </connections>
                                     </collectionViewCell>
@@ -109,6 +108,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oo2-MJ-MzH"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awg-mv-zMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -116,7 +116,4 @@
             <point key="canvasLocation" x="1462" y="100"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="videoPlaceholder" width="1280" height="720"/>
-    </resources>
 </document>

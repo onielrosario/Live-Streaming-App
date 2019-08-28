@@ -16,46 +16,57 @@ class PlayerView: UIView {
     @IBOutlet weak var fastForwardButton: UIButton!
     @IBOutlet weak var streamBar: UISlider!
     @IBOutlet weak var cancelButton: UIButton!
-    var video: VideoClip! {
-        didSet {
-            setupVideoContent(video: self.video)
-            addSubview(contentView)
-//            setupContrains()
-        }
-    }
+    @IBOutlet weak var initialTimeframe: UILabel!
+    @IBOutlet weak var totalTimeframe: UILabel!
+    
+    
+    lazy var avPlayer: AVPlayerView = {
+        let player = AVPlayerView()
+        player.translatesAutoresizingMaskIntoConstraints = false
+        return player
+    }()
     
     override init(frame: CGRect) {
-        super.init(frame: frame)
-       commonInit()
-//      setupContrains()
+        super.init(frame: .zero)
+        commonInit()
     }
-
+    
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
-//      setupContrains()
     }
     
     private func  commonInit() {
         Bundle.main.loadNibNamed("CustomPlayer", owner: self, options: nil)
+        setupPlayerContraints()
+        setupContrains()
+        backgroundColor = .black
     }
     
-    private func setupVideoContent(video: VideoClip) {
-        let player = AVPlayer(url: video.link)
-        let playerLayer = AVPlayerLayer(player: player)
-       self.layer.addSublayer(playerLayer)
-        playerLayer.frame = contentView.frame
-        player.play()
+    func setupVideoContent(video: URL) {
+        avPlayer.playerLayer.player = AVPlayer(url: video)
+        avPlayer.playerLayer.player?.play()
+    }
+    
+    private func setupPlayerContraints() {
+        addSubview(avPlayer)
+        NSLayoutConstraint.activate([
+            avPlayer.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            avPlayer.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
+            avPlayer.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
+            avPlayer.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor)
+            ])
     }
     
     private func  setupContrains() {
-    addSubview(contentView)
-    contentView.translatesAutoresizingMaskIntoConstraints = false
-    contentView.widthAnchor.constraint(equalTo: self.safeAreaLayoutGuide.widthAnchor, multiplier: 0).isActive = true
-    contentView.heightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.heightAnchor, multiplier: 0).isActive = true
-    contentView.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor).isActive = true
-    contentView.centerYAnchor.constraint(equalTo:  self.safeAreaLayoutGuide.centerYAnchor).isActive = true
+        avPlayer.addSubview(contentView)
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            contentView.topAnchor.constraint(equalTo: avPlayer.topAnchor),
+            contentView.bottomAnchor.constraint(equalTo: avPlayer.bottomAnchor),
+            contentView.leadingAnchor.constraint(equalTo: avPlayer.leadingAnchor),
+            contentView.trailingAnchor.constraint(equalTo: avPlayer.trailingAnchor)
+            ])
     }
-    
 }

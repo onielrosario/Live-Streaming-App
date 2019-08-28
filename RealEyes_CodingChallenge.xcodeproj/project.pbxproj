@@ -14,6 +14,9 @@
 		091EDC36230DE71B00DAE930 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC35230DE71B00DAE930 /* DetailViewController.swift */; };
 		091EDC38230DF6F100DAE930 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC37230DF6F100DAE930 /* Video.swift */; };
 		091EDC3C230DFD2200DAE930 /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC3B230DFD2200DAE930 /* AppUtilities.swift */; };
+		09289B9323146E0000176436 /* ListVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09289B9223146E0000176436 /* ListVCViewModel.swift */; };
+		09289B95231478CA00176436 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09289B94231478CA00176436 /* PlayerViewController.swift */; };
+		09289B972314991100176436 /* DetailVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09289B962314991100176436 /* DetailVCViewModel.swift */; };
 		09C13A39230F40F70097DB39 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C13A38230F40F70097DB39 /* Extensions+UIViewController.swift */; };
 		09C13A3B230F4BD70097DB39 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C13A3A230F4BD70097DB39 /* LoadingScreen.swift */; };
 		09C13A3D230F8BDD0097DB39 /* Extensions+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C13A3C230F8BDD0097DB39 /* Extensions+UICollectionView.swift */; };
@@ -46,6 +49,9 @@
 		091EDC35230DE71B00DAE930 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		091EDC37230DF6F100DAE930 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		091EDC3B230DFD2200DAE930 /* AppUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
+		09289B9223146E0000176436 /* ListVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVCViewModel.swift; sourceTree = "<group>"; };
+		09289B94231478CA00176436 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		09289B962314991100176436 /* DetailVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVCViewModel.swift; sourceTree = "<group>"; };
 		09C13A38230F40F70097DB39 /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
 		09C13A3A230F4BD70097DB39 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		09C13A3C230F8BDD0097DB39 /* Extensions+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UICollectionView.swift"; sourceTree = "<group>"; };
@@ -113,6 +119,8 @@
 		09B372D0230CFF500011F580 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				09289B9223146E0000176436 /* ListVCViewModel.swift */,
+				09289B962314991100176436 /* DetailVCViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 			children = (
 				09D83B43230C7D47006222B8 /* ListViewController.swift */,
 				091EDC35230DE71B00DAE930 /* DetailViewController.swift */,
+				09289B94231478CA00176436 /* PlayerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -315,10 +324,13 @@
 				091EDC32230DE36F00DAE930 /* PlayerModel.swift in Sources */,
 				09C13A3B230F4BD70097DB39 /* LoadingScreen.swift in Sources */,
 				091EDC3C230DFD2200DAE930 /* AppUtilities.swift in Sources */,
+				09289B95231478CA00176436 /* PlayerViewController.swift in Sources */,
 				09C13A39230F40F70097DB39 /* Extensions+UIViewController.swift in Sources */,
 				09CF219F230F21CF00EB2661 /* MainListCollectionViewCell.swift in Sources */,
 				09D83B44230C7D47006222B8 /* ListViewController.swift in Sources */,
+				09289B972314991100176436 /* DetailVCViewModel.swift in Sources */,
 				091EDC34230DE39600DAE930 /* PlayerView.swift in Sources */,
+				09289B9323146E0000176436 /* ListVCViewModel.swift in Sources */,
 				091EDC2E230DC0CA00DAE930 /* SourceModel.swift in Sources */,
 				09C13A3D230F8BDD0097DB39 /* Extensions+UICollectionView.swift in Sources */,
 				09D83B42230C7D47006222B8 /* AppDelegate.swift in Sources */,
@@ -486,7 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AVC7FB3M8N;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RealEyes_CodingChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,7 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AVC7FB3M8N;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RealEyes_CodingChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

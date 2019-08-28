@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import AVKit
 
 class ListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    let source = Source()
+    private let viewModel: ListVCViewModeling = ListVCViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,28 +34,38 @@ class ListViewController: UIViewController {
 
 extension ListViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return source.sources.count
+        return viewModel.sources.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as? MainListCollectionViewCell else {
             fatalError("error dequeuing cell")
         }
-        let video = source.sources[indexPath.row]
-        cell.configureCell(video: video, action: #selector(displayVideo), tag: indexPath.row, owner: self)
+        let video = viewModel.sources[indexPath.row]
+       cell.updateWith(source: video)
         return cell
     }
     
     @objc private func displayVideo(button: UIButton) {
-        presentPlayer(video: source.sources[button.tag])
+//        presentPlayer(video: viewModel.sources[button.tag])
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width - 30, height: 200)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        guard let url = URL(string: viewModel.sources[indexPath.row].link.absoluteString) else { return }
+//        let vc = PlayerViewController()
+//        let player = AVPlayer(url: url)
+//        vc.player = player
+//        present(vc, animated: true, completion: nil)
+        presentPlayer(video: viewModel.sources[indexPath.row])
+    }
+    
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
         collectionView.collectionViewLayout.invalidateLayout()
     }
+    
 
 }

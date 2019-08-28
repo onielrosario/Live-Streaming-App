@@ -13,7 +13,7 @@ extension UIViewController {
     func presentPlayer(video: VideoClip) {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let detailPlayer = storyboard.instantiateViewController(withIdentifier: "DetailVC") as! DetailViewController
-        detailPlayer.video = video
+        detailPlayer.videoSource = video
         present(detailPlayer, animated: true)
     }
 }
