@@ -46,20 +46,11 @@ extension ListViewController: UICollectionViewDataSource, UICollectionViewDelega
         return cell
     }
     
-    @objc private func displayVideo(button: UIButton) {
-//        presentPlayer(video: viewModel.sources[button.tag])
-    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width - 30, height: 200)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        guard let url = URL(string: viewModel.sources[indexPath.row].link.absoluteString) else { return }
-//        let vc = PlayerViewController()
-//        let player = AVPlayer(url: url)
-//        vc.player = player
-//        present(vc, animated: true, completion: nil)
         presentPlayer(video: viewModel.sources[indexPath.row])
     }
     
@@ -67,5 +58,8 @@ extension ListViewController: UICollectionViewDataSource, UICollectionViewDelega
         collectionView.collectionViewLayout.invalidateLayout()
     }
     
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return .portrait
+    }
 
 }
