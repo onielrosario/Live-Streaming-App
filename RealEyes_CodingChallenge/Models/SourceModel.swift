@@ -13,11 +13,10 @@ protocol SourceModeling {
 }
 
 class Source: SourceModeling {
-    let thumbURL = Bundle.main.path(forResource: "videoStillFrame1", ofType: "png")
-    let secondthumbURL = Bundle.main.path(forResource: "videoStillFrame2", ofType: "png")
     lazy var sources: [VideoClip] = [
-        VideoClip(link: URL(string:"https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")!, thumbNail: URL(fileURLWithPath: thumbURL!), name: "First video"),
-        VideoClip(link: URL(string:"http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8")!, thumbNail: URL(fileURLWithPath: secondthumbURL!), name: "Second video")
+        VideoClip(link: URL(string:"https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8")!, thumbNail: URL(fileURLWithPath: Bundle.main.path(forResource: "videoStillFrame1", ofType: "png")!), name: "Parkour"),
+        VideoClip(link: URL(string:"http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8")!, thumbNail: URL(fileURLWithPath: Bundle.main.path(forResource: "videoStillFrame2", ofType: "png")!), name: "Apple presentation"),
+        VideoClip(link: URL(string: "https://abclive1-lh.akamaihd.net/i/abc_live05@423399/master.m3u8")!, thumbNail: URL(fileURLWithPath: Bundle.main.path(forResource: "ABCNews", ofType: "jpg")!), name: "ABC News Live Coverage")
     ]
 }
 

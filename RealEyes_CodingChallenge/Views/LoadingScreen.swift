@@ -11,14 +11,14 @@ import UIKit
 
 class LoadingScreen: UIView {
     lazy var activityIndicator: UIActivityIndicatorView = {
-        var indicator = UIActivityIndicatorView()
+        var indicator = UIActivityIndicatorView(style: .whiteLarge)
         indicator.translatesAutoresizingMaskIntoConstraints = false
         return indicator
     }()
     
     
     override init(frame: CGRect) {
-        super.init(frame: UIScreen.main.bounds)
+        super.init(frame: .zero)
         commonInit()
     }
     
@@ -29,12 +29,14 @@ class LoadingScreen: UIView {
     
     private func  commonInit() {
         backgroundColor = .black
-        addSubview(activityIndicator)
         setupContrains()
     }
     
     private func setupContrains() {
-        activityIndicator.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        activityIndicator.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+          addSubview(activityIndicator)
+        activityIndicator.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor).isActive = true
+        activityIndicator.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        activityIndicator.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        activityIndicator.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
 }
