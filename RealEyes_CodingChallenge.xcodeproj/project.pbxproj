@@ -14,6 +14,8 @@
 		091965B42317D6C000DCDFDA /* foxSports.png in Resources */ = {isa = PBXBuildFile; fileRef = 091965B32317D6C000DCDFDA /* foxSports.png */; };
 		091965B62317DFD300DCDFDA /* lowfiradio.png in Resources */ = {isa = PBXBuildFile; fileRef = 091965B52317DFD300DCDFDA /* lowfiradio.png */; };
 		091965B82317E6D200DCDFDA /* nasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 091965B72317E6D200DCDFDA /* nasa.jpg */; };
+		091965BA2317E8A300DCDFDA /* Simpsons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 091965B92317E8A300DCDFDA /* Simpsons.jpg */; };
+		091965BC2317EB0600DCDFDA /* heroes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 091965BB2317EB0500DCDFDA /* heroes.jpg */; };
 		091EDC2E230DC0CA00DAE930 /* SourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC2D230DC0CA00DAE930 /* SourceModel.swift */; };
 		091EDC32230DE36F00DAE930 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC31230DE36F00DAE930 /* PlayerModel.swift */; };
 		091EDC38230DF6F100DAE930 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC37230DF6F100DAE930 /* Video.swift */; };
@@ -51,6 +53,8 @@
 		091965B32317D6C000DCDFDA /* foxSports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foxSports.png; sourceTree = "<group>"; };
 		091965B52317DFD300DCDFDA /* lowfiradio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lowfiradio.png; sourceTree = "<group>"; };
 		091965B72317E6D200DCDFDA /* nasa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nasa.jpg; sourceTree = "<group>"; };
+		091965B92317E8A300DCDFDA /* Simpsons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Simpsons.jpg; sourceTree = "<group>"; };
+		091965BB2317EB0500DCDFDA /* heroes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heroes.jpg; sourceTree = "<group>"; };
 		091EDC2D230DC0CA00DAE930 /* SourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModel.swift; sourceTree = "<group>"; };
 		091EDC31230DE36F00DAE930 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerModel.swift; path = ../Views/PlayerModel.swift; sourceTree = "<group>"; };
 		091EDC37230DF6F100DAE930 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				091965B32317D6C000DCDFDA /* foxSports.png */,
 				091965B52317DFD300DCDFDA /* lowfiradio.png */,
 				091965B72317E6D200DCDFDA /* nasa.jpg */,
+				091965B92317E8A300DCDFDA /* Simpsons.jpg */,
+				091965BB2317EB0500DCDFDA /* heroes.jpg */,
 			);
 			path = Thumbnails;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				091965AC2317BE4A00DCDFDA /* adultSwim.jpg in Resources */,
+				091965BA2317E8A300DCDFDA /* Simpsons.jpg in Resources */,
 				09D83B4C230C7D49006222B8 /* LaunchScreen.storyboard in Resources */,
 				091965AE2317C07F00DCDFDA /* rickAndMorty.png in Resources */,
 				09CF21A2230F2C5900EB2661 /* videoStillFrame1.png in Resources */,
@@ -306,6 +313,7 @@
 				09631FE323170F7200FB3790 /* ABCNews.jpg in Resources */,
 				091965B02317C57000DCDFDA /* BloombergTV.png in Resources */,
 				091965B22317D5F400DCDFDA /* forencics.jpg in Resources */,
+				091965BC2317EB0600DCDFDA /* heroes.jpg in Resources */,
 				09CF21A4230F398500EB2661 /* videoStillFrame2.png in Resources */,
 				09D83B49230C7D49006222B8 /* Assets.xcassets in Resources */,
 				09D83B47230C7D47006222B8 /* Main.storyboard in Resources */,
