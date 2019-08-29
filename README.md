@@ -43,8 +43,9 @@
 - [x] Video allows landscape mode.
 
 ## Timeframe and process:
-- First, it took me few days to learn MVVM architecture, and while learning so, I first built the application in MVC to
-then migrate to a more cleaner flow.
+- First, it took me few days to learn MVVM architecture, how the Model communicates to the ViewModel to feed the view:
+<img width="350" alt="MVVM" src="https://user-images.githubusercontent.com/43827399/63966464-922f0a80-ca58-11e9-9d65-40dc4e357a6e.jpg">
+While learning so, I first built the application in MVC to then migrate to a more cleaner flow.
 - I chose UICollectionView over UITableView to display the list of videos because there is more freedom in designing
 UICollectionViewCells, control the separation insets and sizes.
 - Brainstorming the flow was not very difficult taking in cosideration the functionalities are minimal within the application.
