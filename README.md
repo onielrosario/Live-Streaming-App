@@ -17,17 +17,20 @@
 
 ## Launch Screen
 - Upon Launching the app, the user sees a welcome page as the application loads the content.
+
 <img width="250" alt="launch screen" src="https://user-images.githubusercontent.com/43827399/63910754-3b3c1d80-c9e5-11e9-8573-1386bdc69c6a.png">
 
 ## Features:
-- A list of videos available for streaming
+- A list of videos available for streaming.
+
 <img width="250" alt="launch screen" src="https://user-images.githubusercontent.com/43827399/63914533-c1119600-c9f0-11e9-83e8-25da94b33881.png">
 
 - Upon tapping on a item, the user is able to view HLS content.
-<p align="left">
+
 ![default playback](https://user-images.githubusercontent.com/43827399/63915108-5d886800-c9f2-11e9-9410-4e658c8cfb4d.gif)
-</p>
+
 - user can play/pause, seek, and display current time/duration of the video.
+
 ![defaultPlaybackControl](https://user-images.githubusercontent.com/43827399/63915591-aa207300-c9f3-11e9-8ac6-7dca8087c86a.gif)
 
 ## Requirements:
@@ -40,7 +43,7 @@
 - [x] Video allows landscape mode.
 
 ## Timeframe and process:
-- First took me few days to learn MVVM architecture, and while learning so, I first built the application in MVC to
+- First, it took me few days to learn MVVM architecture, and while learning so, I first built the application in MVC to
 then migrate to a more cleaner flow.
 - I chose UICollectionView over UITableView to display the list of videos because there is more freedom in designing
 UICollectionViewCells, control the separation insets and sizes.
