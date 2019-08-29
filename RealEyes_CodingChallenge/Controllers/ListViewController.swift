@@ -51,7 +51,8 @@ extension ListViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presentPlayer(video: viewModel.sources[indexPath.row])
+        guard let url = URL(string: viewModel.sources[indexPath.row].link.absoluteString) else { return }
+        presentPlayer(videoUrl: url)
     }
     
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {

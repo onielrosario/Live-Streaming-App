@@ -8,19 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		091EDC2E230DC0CA00DAE930 /* SourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC2D230DC0CA00DAE930 /* SourceModel.swift */; };
-		091EDC30230DDCC900DAE930 /* CustomPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091EDC2F230DDCC900DAE930 /* CustomPlayer.xib */; };
 		091EDC32230DE36F00DAE930 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC31230DE36F00DAE930 /* PlayerModel.swift */; };
-		091EDC34230DE39600DAE930 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC33230DE39600DAE930 /* PlayerView.swift */; };
-		091EDC36230DE71B00DAE930 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC35230DE71B00DAE930 /* DetailViewController.swift */; };
 		091EDC38230DF6F100DAE930 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC37230DF6F100DAE930 /* Video.swift */; };
 		091EDC3C230DFD2200DAE930 /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091EDC3B230DFD2200DAE930 /* AppUtilities.swift */; };
 		09289B9323146E0000176436 /* ListVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09289B9223146E0000176436 /* ListVCViewModel.swift */; };
 		09289B95231478CA00176436 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09289B94231478CA00176436 /* PlayerViewController.swift */; };
-		09289B972314991100176436 /* DetailVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09289B962314991100176436 /* DetailVCViewModel.swift */; };
 		09631FE323170F7200FB3790 /* ABCNews.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09631FE223170F7200FB3790 /* ABCNews.jpg */; };
 		09C13A39230F40F70097DB39 /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C13A38230F40F70097DB39 /* Extensions+UIViewController.swift */; };
 		09C13A3B230F4BD70097DB39 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C13A3A230F4BD70097DB39 /* LoadingScreen.swift */; };
-		09C13A3D230F8BDD0097DB39 /* Extensions+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C13A3C230F8BDD0097DB39 /* Extensions+UICollectionView.swift */; };
 		09CF219F230F21CF00EB2661 /* MainListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CF219E230F21CF00EB2661 /* MainListCollectionViewCell.swift */; };
 		09CF21A2230F2C5900EB2661 /* videoStillFrame1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09CF21A1230F2C5800EB2661 /* videoStillFrame1.png */; };
 		09CF21A4230F398500EB2661 /* videoStillFrame2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09CF21A3230F398500EB2661 /* videoStillFrame2.png */; };
@@ -44,19 +39,14 @@
 
 /* Begin PBXFileReference section */
 		091EDC2D230DC0CA00DAE930 /* SourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModel.swift; sourceTree = "<group>"; };
-		091EDC2F230DDCC900DAE930 /* CustomPlayer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPlayer.xib; sourceTree = "<group>"; };
 		091EDC31230DE36F00DAE930 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerModel.swift; path = ../Views/PlayerModel.swift; sourceTree = "<group>"; };
-		091EDC33230DE39600DAE930 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		091EDC35230DE71B00DAE930 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		091EDC37230DF6F100DAE930 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		091EDC3B230DFD2200DAE930 /* AppUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
 		09289B9223146E0000176436 /* ListVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVCViewModel.swift; sourceTree = "<group>"; };
 		09289B94231478CA00176436 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
-		09289B962314991100176436 /* DetailVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVCViewModel.swift; sourceTree = "<group>"; };
 		09631FE223170F7200FB3790 /* ABCNews.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ABCNews.jpg; sourceTree = "<group>"; };
 		09C13A38230F40F70097DB39 /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
 		09C13A3A230F4BD70097DB39 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
-		09C13A3C230F8BDD0097DB39 /* Extensions+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UICollectionView.swift"; sourceTree = "<group>"; };
 		09CF219E230F21CF00EB2661 /* MainListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListCollectionViewCell.swift; sourceTree = "<group>"; };
 		09CF21A1230F2C5800EB2661 /* videoStillFrame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoStillFrame1.png; sourceTree = "<group>"; };
 		09CF21A3230F398500EB2661 /* videoStillFrame2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoStillFrame2.png; sourceTree = "<group>"; };
@@ -101,8 +91,6 @@
 		09B372CE230CFF340011F580 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				091EDC2F230DDCC900DAE930 /* CustomPlayer.xib */,
-				091EDC33230DE39600DAE930 /* PlayerView.swift */,
 				09C13A3A230F4BD70097DB39 /* LoadingScreen.swift */,
 			);
 			path = Views;
@@ -122,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				09289B9223146E0000176436 /* ListVCViewModel.swift */,
-				09289B962314991100176436 /* DetailVCViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -131,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				09C13A38230F40F70097DB39 /* Extensions+UIViewController.swift */,
-				09C13A3C230F8BDD0097DB39 /* Extensions+UICollectionView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,7 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				09D83B43230C7D47006222B8 /* ListViewController.swift */,
-				091EDC35230DE71B00DAE930 /* DetailViewController.swift */,
 				09289B94231478CA00176436 /* PlayerViewController.swift */,
 			);
 			path = Controllers;
@@ -304,7 +289,6 @@
 				09D83B4C230C7D49006222B8 /* LaunchScreen.storyboard in Resources */,
 				09CF21A2230F2C5900EB2661 /* videoStillFrame1.png in Resources */,
 				09631FE323170F7200FB3790 /* ABCNews.jpg in Resources */,
-				091EDC30230DDCC900DAE930 /* CustomPlayer.xib in Resources */,
 				09CF21A4230F398500EB2661 /* videoStillFrame2.png in Resources */,
 				09D83B49230C7D49006222B8 /* Assets.xcassets in Resources */,
 				09D83B47230C7D47006222B8 /* Main.storyboard in Resources */,
@@ -332,13 +316,9 @@
 				09C13A39230F40F70097DB39 /* Extensions+UIViewController.swift in Sources */,
 				09CF219F230F21CF00EB2661 /* MainListCollectionViewCell.swift in Sources */,
 				09D83B44230C7D47006222B8 /* ListViewController.swift in Sources */,
-				09289B972314991100176436 /* DetailVCViewModel.swift in Sources */,
-				091EDC34230DE39600DAE930 /* PlayerView.swift in Sources */,
 				09289B9323146E0000176436 /* ListVCViewModel.swift in Sources */,
 				091EDC2E230DC0CA00DAE930 /* SourceModel.swift in Sources */,
-				09C13A3D230F8BDD0097DB39 /* Extensions+UICollectionView.swift in Sources */,
 				09D83B42230C7D47006222B8 /* AppDelegate.swift in Sources */,
-				091EDC36230DE71B00DAE930 /* DetailViewController.swift in Sources */,
 				091EDC38230DF6F100DAE930 /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
