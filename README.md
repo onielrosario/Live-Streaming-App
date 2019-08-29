@@ -13,7 +13,7 @@
 ## Technologies - Frameworks - Architecture:
 - Swift 5
 - UIKit, AVKit, XCTTest
-- MVVM - [source](https://www.youtube.com/watch?v=n06RE9A_8Ks&t=752s)
+- MVVM - [Source](https://www.youtube.com/watch?v=n06RE9A_8Ks&t=752s)
 
 ## Launch Screen
 - Upon Launching the app, the user sees a welcome page as the application loads the content.
@@ -24,8 +24,9 @@
 <img width="250" alt="launch screen" src="https://user-images.githubusercontent.com/43827399/63914533-c1119600-c9f0-11e9-83e8-25da94b33881.png">
 
 - Upon tapping on a item, the user is able to view HLS content.
+<p align="left">
 ![default playback](https://user-images.githubusercontent.com/43827399/63915108-5d886800-c9f2-11e9-9410-4e658c8cfb4d.gif)
-
+</p>
 - user can play/pause, seek, and display current time/duration of the video.
 ![defaultPlaybackControl](https://user-images.githubusercontent.com/43827399/63915591-aa207300-c9f3-11e9-8ac6-7dca8087c86a.gif)
 
