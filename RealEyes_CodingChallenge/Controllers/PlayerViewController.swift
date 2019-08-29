@@ -6,17 +6,21 @@
 //  Copyright © 2019 Oniel Rosario. All rights reserved.
 //
 
-//import UIKit
 import AVKit
 
 class PlayerViewController: AVPlayerViewController {
-
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-      player?.play()
+     setupUI()
     }
     
-
+    private func setupUI() {
+        AppUtility.lockOrientationWithRotation(.landscape, andRotateTo: .landscapeRight)
+        player?.play()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        AppUtility.lockOrientation(orientation: .all)
+    }
 }

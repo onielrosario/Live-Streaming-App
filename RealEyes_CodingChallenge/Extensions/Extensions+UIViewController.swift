@@ -6,14 +6,14 @@
 //  Copyright © 2019 Oniel Rosario. All rights reserved.
 //
 
-import UIKit
+import AVKit
 
 
 extension UIViewController {
-    func presentPlayer(video: VideoClip) {
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let detailPlayer = storyboard.instantiateViewController(withIdentifier: "DetailVC") as! DetailViewController
-        detailPlayer.videoSource = video
-        present(detailPlayer, animated: true)
+    func presentPlayer(videoUrl: URL) {
+       let playerViewController = PlayerViewController()
+        let player = AVPlayer(url: videoUrl)
+        playerViewController.player = player
+        present(playerViewController, animated: true)
     }
 }

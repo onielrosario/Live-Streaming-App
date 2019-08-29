@@ -39,13 +39,13 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="215"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geY-GY-9tk">
-                                                    <rect key="frame" x="20" y="169.5" width="246" height="25.5"/>
+                                                    <rect key="frame" x="20" y="10" width="246" height="25.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                     <color key="textColor" red="1" green="0.85618325390000005" blue="0.51237655900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ups-09-mJl">
-                                                    <rect key="frame" x="20" y="138.5" width="246" height="21"/>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ups-09-mJl">
+                                                    <rect key="frame" x="20" y="-21" width="246" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="1" green="0.85618325390000005" blue="0.51237655900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -57,10 +57,10 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="ups-09-mJl" secondAttribute="trailing" constant="100" id="CGZ-We-JjW"/>
                                             <constraint firstItem="LN3-6Q-ltd" firstAttribute="top" secondItem="xFp-Sh-hgY" secondAttribute="top" id="Lec-Yg-rLj"/>
                                             <constraint firstItem="geY-GY-9tk" firstAttribute="top" secondItem="ups-09-mJl" secondAttribute="bottom" constant="10" id="S8E-35-ss0"/>
+                                            <constraint firstItem="geY-GY-9tk" firstAttribute="top" secondItem="LN3-6Q-ltd" secondAttribute="top" constant="10" id="eXG-Q9-yud"/>
                                             <constraint firstAttribute="trailing" secondItem="LN3-6Q-ltd" secondAttribute="trailing" id="ew5-JJ-7ua"/>
                                             <constraint firstItem="ups-09-mJl" firstAttribute="leading" secondItem="xFp-Sh-hgY" secondAttribute="leadingMargin" constant="12" id="lgE-iT-PW9"/>
                                             <constraint firstAttribute="bottom" secondItem="LN3-6Q-ltd" secondAttribute="bottom" id="mn8-bF-GZb"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="geY-GY-9tk" secondAttribute="bottom" constant="12" id="rfH-hi-Hc2"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="geY-GY-9tk" secondAttribute="trailing" constant="100" id="wgb-vK-0Mi"/>
                                             <constraint firstItem="LN3-6Q-ltd" firstAttribute="leading" secondItem="xFp-Sh-hgY" secondAttribute="leading" id="zc0-Yq-XR1"/>
                                         </constraints>
@@ -99,21 +99,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
-        </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="wnD-KD-VwZ">
-            <objects>
-                <viewController storyboardIdentifier="DetailVC" id="UBr-Sc-EgR" customClass="DetailViewController" customModule="RealEyes_CodingChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eUp-39-MJ9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="oo2-MJ-MzH"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="awg-mv-zMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1462" y="100"/>
         </scene>
     </scenes>
 </document>
