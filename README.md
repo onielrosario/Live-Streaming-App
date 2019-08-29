@@ -18,6 +18,9 @@ An AVPlayer app for streaming sources.
 
 ## Features:
 - A list of videos available for streaming
+<img width="250" alt="launch screen" src="https://user-images.githubusercontent.com/43827399/63914533-c1119600-c9f0-11e9-83e8-25da94b33881.png">
+
+- Upon tapping on a item, the user is able to view HLS content.
 
 ## Requirements:
 - [x] Minimal Application. 
