@@ -8,6 +8,7 @@ An AVPlayer app for streaming sources.
 
 ## Launch Screen
 <img width="250" alt="Screen Shot sample 1" src="https://user-images.githubusercontent.com/43827399/63910754-3b3c1d80-c9e5-11e9-8573-1386bdc69c6a.png">
+
 ## Features:
 
 ## Requirements:
