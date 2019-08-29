@@ -50,6 +50,9 @@ While learning so, I first built the application in MVC to then migrate to a mor
 - I chose UICollectionView over UITableView to display the list of videos because there is more freedom in designing
 UICollectionViewCells, control the separation insets and sizes.
 - Brainstorming the flow was not very difficult taking in cosideration the functionalities are minimal within the application.
+I listed the help i needed to build the flow i wanted. I spend a day searching for helpers implementations and understand how they work. for example:
+ AppUtility custom tool to control the Device orientation depending in Which view I am.
+ How to model the sources, transfer data, and extensions to help users If there are any errors.
 but implementing the ViewModel architecture took me some time to understand.
 - Playback control was very challenging, I started building my own playback control from scratch and this is what took me few day to grasp and implement. Later on i learned iOS provide default custom playback controls and this made this project easier to complete.
 
