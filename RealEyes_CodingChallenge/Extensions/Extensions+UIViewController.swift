@@ -16,7 +16,6 @@ extension UIViewController {
         playerViewController.player = player
         present(playerViewController, animated: true)
     }
-    
     public func presentAlertWithAction(title: String?, message: String?) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default) { OK in }

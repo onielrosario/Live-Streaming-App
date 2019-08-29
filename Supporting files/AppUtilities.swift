@@ -5,8 +5,6 @@
 //  Created by Oniel Rosario on 8/21/19.
 //  Copyright © 2019 Oniel Rosario. All rights reserved.
 //
-
-import Foundation
 import UIKit
 
 
@@ -16,7 +14,6 @@ struct AppUtility {
             appDelegate.orientation = orientation
         }
     }
-    
     static func lockOrientationWithRotation(_ orientation: UIInterfaceOrientationMask, andRotateTo rotateOrientation:UIInterfaceOrientation) {
         self.lockOrientation(orientation: orientation)
         UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
