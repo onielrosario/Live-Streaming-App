@@ -7,6 +7,8 @@
 ## Run Project:
 - Xcode Version 10.3
 - Simulator - iPhone XR, iPhone X
+- iOS 10.14.4
+
 ## Technologies - Frameworks - Architecture:
 - Swift 5
 - UIKit, AVKit, XCTTest
