@@ -1,4 +1,4 @@
-# RealEyes-CodeChallenge streaming app
+# RealEyes-CodeChallenge streaming app:
  An AVPlayer app for streaming sources.
 <p align="center">
   <img width="250" src="https://user-images.githubusercontent.com/43827399/63911861-0b8f1480-c9e9-11e9-973d-fb08c1db05f8.png" />
@@ -36,11 +36,20 @@
 - [x] Written in swift.
 - [x] MVVM architecture. 
 - [x] The player shall have a custom control bar with the ability to play/pause, seek, and display current time/duration.
-- [x] Video only allows landscape mode.
+- [x] Video allows landscape mode.
+
+## Timeframe and process:
+- First took me few days to learn MVVM architecture, and while learning so, I first built the application in MVC to
+then migrate to a more cleaner flow.
+- I chose UICollectionView over UITableView to display the list of videos because there is more freedom in designing
+UICollectionViewCells, control the separation insets and sizes.
+- Brainstorming the flow was not very difficult taking in cosideration the functionalities are minimal within the application.
+- playback control was very challenging, I started building my own playback control from scratch and this is what took me few day to grasp and implement. Later on i learned iOS provide default custom playback controls and this made this project su much more easier to complete.
 
 ## List of features I could improve:
 - Custom designs for launch page
 - Custom logo for the app
+- Add Lottie COCOAPODS for better UI/UX [example here](https://airbnb.io/lottie/#/)
 - Copyright infrightment statements to allow the app to be deployed in the App Store.
 The app uses open source HLS contents. [you can view them found here](https://github.com/bengarney/list-of-streams/blob/master/README.md)
 
