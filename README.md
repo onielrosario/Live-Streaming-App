@@ -54,7 +54,7 @@ I listed the help i needed to build the flow i wanted. I spend a day searching f
  AppUtility custom tool to control the Device orientation depending in Which view I am.
  How to model the sources, transfer data, and extensions to help users If there are any errors.
 but implementing the ViewModel architecture took me some time to understand.
-- Playback control was very challenging, I started building my own playback control from scratch and this is what took me few day to grasp and implement. Later on i learned iOS provide default custom playback controls and this made this project easier to complete.
+- Playback control was very challenging, I started building my own playback control from scratch and this is what took me few days to grasp and implement. I had to learn more about AVFoundation and AVKit and how the AVPlayer works to be abled to pass those functions and place it on a custom view(.Xib file) inside buttons' targets. Later on i learned iOS provide default custom playback controls and this made this project easier to complete.
 
 ## List of features I could improve:
 - Custom designs for launch page
