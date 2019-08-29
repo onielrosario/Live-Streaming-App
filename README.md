@@ -46,5 +46,6 @@ The app uses open source HLS contents. [you can view them found here](https://gi
 - Custom playback controls. 
 
 Here is an example I Got to work on another branch:
+
 ![CustomskipAndRewind](https://user-images.githubusercontent.com/43827399/63915695-e8b62d80-c9f3-11e9-8243-8e53fe1019f9.gif)
 
