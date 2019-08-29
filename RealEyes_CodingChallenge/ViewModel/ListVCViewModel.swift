@@ -13,13 +13,9 @@ protocol ListVCViewModeling {
 
 class ListVCViewModel: ListVCViewModeling {
     var sources: [VideoClip]
-    
     var player: AVPlayer
-    
     var cellSpacing: CGFloat
-    
     var numberOfCells: CGFloat
-    
     var numberOfSpaces: CGFloat
     
     init(sources: SourceModeling = Source(),
