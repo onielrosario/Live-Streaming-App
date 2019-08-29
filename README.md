@@ -38,4 +38,6 @@ An AVPlayer app for streaming sources.
 - Custom designs for launch page
 - Custom logo for the app
 - Copyright infrightment statements to allow the app to be deployed in the App Store.
+The app uses open source HLS contents. [you can view them found here](https://github.com/bengarney/list-of-streams/blob/master/README.md)
+[this link provides copyright letter templates](https://www.upcounsel.com/licensing-agreement)
 - Custom playback controls. Got to work on some of it on another branch:
