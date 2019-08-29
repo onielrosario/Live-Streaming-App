@@ -24,6 +24,7 @@ An AVPlayer app for streaming sources.
 ![default playback](https://user-images.githubusercontent.com/43827399/63915108-5d886800-c9f2-11e9-9410-4e658c8cfb4d.gif)
 
 - user can play/pause, seek, and display current time/duration of the video.
+![defaultPlaybackControl](https://user-images.githubusercontent.com/43827399/63915591-aa207300-c9f3-11e9-8ac6-7dca8087c86a.gif)
 
 ## Requirements:
 - [x] Minimal Application. 
@@ -39,5 +40,6 @@ An AVPlayer app for streaming sources.
 - Custom logo for the app
 - Copyright infrightment statements to allow the app to be deployed in the App Store.
 The app uses open source HLS contents. [you can view them found here](https://github.com/bengarney/list-of-streams/blob/master/README.md)
+
 [this link provides copyright letter templates](https://www.upcounsel.com/licensing-agreement)
 - Custom playback controls. Got to work on some of it on another branch:
