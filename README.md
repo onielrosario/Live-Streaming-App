@@ -8,6 +8,7 @@
 - Xcode Version 10.3
 - Simulator - iPhone XR, iPhone X
 - macOS 10.14.4 Mojave
+- iOS 12.3.1
 
 ## Technologies - Frameworks - Architecture:
 - Swift 5
