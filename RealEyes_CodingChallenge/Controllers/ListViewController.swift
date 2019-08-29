@@ -51,7 +51,9 @@ extension ListViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let url = URL(string: viewModel.sources[indexPath.row].link.absoluteString) else { return }
+        guard let url = URL(string: viewModel.sources[indexPath.row].link.absoluteString) else {
+            fatalError("links does not work or has expired")
+        }
         presentPlayer(videoUrl: url)
     }
     

@@ -20,7 +20,11 @@ class PlayerViewController: AVPlayerViewController {
     }
     
     private func setupUI() {
-        player?.play()
+        if let player = player {
+            player.play()
+        } else {
+            presentAlertWithAction(title: "Source url has expired", message: "OK")
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
