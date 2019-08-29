@@ -29,7 +29,7 @@
 
 ![default playback](https://user-images.githubusercontent.com/43827399/63915108-5d886800-c9f2-11e9-9410-4e658c8cfb4d.gif)
 
-- user can play/pause, seek, and display current time/duration of the video.
+- User can play/pause, seek, and display current time/duration of the video.
 
 ![defaultPlaybackControl](https://user-images.githubusercontent.com/43827399/63915591-aa207300-c9f3-11e9-8ac6-7dca8087c86a.gif)
 
@@ -50,7 +50,8 @@ While learning so, I first built the application in MVC to then migrate to a mor
 - I chose UICollectionView over UITableView to display the list of videos because there is more freedom in designing
 UICollectionViewCells, control the separation insets and sizes.
 - Brainstorming the flow was not very difficult taking in cosideration the functionalities are minimal within the application.
-- playback control was very challenging, I started building my own playback control from scratch and this is what took me few day to grasp and implement. Later on i learned iOS provide default custom playback controls and this made this project su much more easier to complete.
+but implementing the ViewModel architecture took me some time to understand.
+- Playback control was very challenging, I started building my own playback control from scratch and this is what took me few day to grasp and implement. Later on i learned iOS provide default custom playback controls and this made this project easier to complete.
 
 ## List of features I could improve:
 - Custom designs for launch page
