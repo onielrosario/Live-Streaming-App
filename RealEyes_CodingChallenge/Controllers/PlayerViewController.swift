@@ -14,8 +14,12 @@ class PlayerViewController: AVPlayerViewController {
      setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+         AppUtility.lockOrientationWithRotation(.landscape, andRotateTo: .landscapeRight)
+        super.viewWillAppear(animated)
+    }
+    
     private func setupUI() {
-        AppUtility.lockOrientationWithRotation(.landscape, andRotateTo: .landscapeRight)
         player?.play()
     }
     
