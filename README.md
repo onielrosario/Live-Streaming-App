@@ -1,16 +1,19 @@
-# RealEyes-CodeChallenge
+# RealEyes-CodeChallenge streaming app
+ An AVPlayer app for streaming sources.
 <p align="center">
   <img width="250" src="https://user-images.githubusercontent.com/43827399/63911861-0b8f1480-c9e9-11e9-973d-fb08c1db05f8.png" />
 </p>
-An AVPlayer app for streaming sources.
 
 ## Run Project:
 - Xcode Version 10.3
 - Simulator - iPhone XR, iPhone X
+- macOS 10.14.4 Mojave
+- iOS 12.3.1
+
 ## Technologies - Frameworks - Architecture:
 - Swift 5
 - UIKit, AVKit, XCTTest
-- MVVM
+- MVVM - [source](https://www.youtube.com/watch?v=n06RE9A_8Ks&t=752s)
 
 ## Launch Screen
 - Upon Launching the app, the user sees a welcome page as the application loads the content.
@@ -18,6 +21,13 @@ An AVPlayer app for streaming sources.
 
 ## Features:
 - A list of videos available for streaming
+<img width="250" alt="launch screen" src="https://user-images.githubusercontent.com/43827399/63914533-c1119600-c9f0-11e9-83e8-25da94b33881.png">
+
+- Upon tapping on a item, the user is able to view HLS content.
+![default playback](https://user-images.githubusercontent.com/43827399/63915108-5d886800-c9f2-11e9-9410-4e658c8cfb4d.gif)
+
+- user can play/pause, seek, and display current time/duration of the video.
+![defaultPlaybackControl](https://user-images.githubusercontent.com/43827399/63915591-aa207300-c9f3-11e9-8ac6-7dca8087c86a.gif)
 
 ## Requirements:
 - [x] Minimal Application. 
@@ -32,4 +42,13 @@ An AVPlayer app for streaming sources.
 - Custom designs for launch page
 - Custom logo for the app
 - Copyright infrightment statements to allow the app to be deployed in the App Store.
-- Custom playback controls. Got to work on some of it on another branch:
+The app uses open source HLS contents. [you can view them found here](https://github.com/bengarney/list-of-streams/blob/master/README.md)
+
+[this link provides copyright letter templates](https://www.upcounsel.com/licensing-agreement)
+
+- Custom playback controls. 
+
+Here is an example I Got to work on another branch:
+
+![CustomskipAndRewind](https://user-images.githubusercontent.com/43827399/63915695-e8b62d80-c9f3-11e9-8243-8e53fe1019f9.gif)
+
