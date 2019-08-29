@@ -21,7 +21,7 @@ An AVPlayer app for streaming sources.
 <img width="250" alt="launch screen" src="https://user-images.githubusercontent.com/43827399/63914533-c1119600-c9f0-11e9-83e8-25da94b33881.png">
 
 - Upon tapping on a item, the user is able to view HLS content.
-<img width="720" alt="https://user-images.githubusercontent.com/43827399/63914964-06829300-c9f2-11e9-980b-d02faba9de84.gif">
+![default playback](https://user-images.githubusercontent.com/43827399/63915108-5d886800-c9f2-11e9-9410-4e658c8cfb4d.gif)
 
 - user can play/pause, seek, and display current time/duration of the video.
 
