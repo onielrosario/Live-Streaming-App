@@ -1,11 +1,3 @@
-//
-//  PlayerViewController.swift
-//  RealEyes_CodingChallenge
-//
-//  Created by Oniel Rosario on 8/26/19.
-//  Copyright © 2019 Oniel Rosario. All rights reserved.
-//
-
 import AVKit
 
 class PlayerViewController: AVPlayerViewController {
